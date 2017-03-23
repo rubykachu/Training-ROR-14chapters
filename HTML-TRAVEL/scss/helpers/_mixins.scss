@@ -1,0 +1,41 @@
+@mixin font-face($font-family, $file-path, $font-weight: normal, $font-style: normal) {
+	@font-face {
+		font-family: quote($font-family);
+		src: url("#{$file-path}.eot");
+		src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff") format("woff"), url("#{$file-path}.ttf") format("truetype"), url("#{$file-path}.svg##{$font-family}") format("svg");
+		font-weight: $font-weight;
+		font-style: $font-style;
+	}
+}
+
+@mixin social{
+	$socials: (
+	fb: "\f09a",
+	gg: "\f1a0",
+	tw: "\f099",
+	yt: "\f16a"
+	);
+	@each $class, $icon in $socials {
+		li > a.#{$class}:before{
+			@if($class == 'fb'){
+				color: #344c8a;
+			}
+			@if($class == 'gg'){
+				color: #c1211d;
+			}
+			@if($class == 'tw'){
+				color: #469ae9;
+			}
+			@if($class == 'yt'){
+				color: #b30017;
+			}
+			content: "#{$icon}";
+			font-family: "FontAwesome";
+			padding-right: 10px;
+			font-size: 18px;
+			width: 15px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}

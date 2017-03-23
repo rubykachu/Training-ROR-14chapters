@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}
+html[xmlns] .clearfix {
+   display: block;
+}
+* html .clearfix {
+   height: 1%;
+}
+body{
+	font-family: quote($font-family);
+	font-size: 14px;
+	font-weight: normal;
+	color: $color-origin-font;
+}
+a{
+  color: $color-origin-font;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+.container{
+	width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
