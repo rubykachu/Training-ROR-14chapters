@@ -21,6 +21,8 @@ class MyApp < Sinatra::Base
 		File.open(LOG_FILE, 'a') do |file|
 			time    = Time.now
 			file.puts "#{time}/#{@title}/#{@content}"
+
+			@message = "Success!"
 			erb:index
 		end
 	end
