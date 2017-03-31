@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0;}
+html[xmlns] .clearfix {
+   display: block;
+}
+* html .clearfix {
+   height: 1%;
+}
+body{
+  font-family: quote($font-family);
+  font-size: 14px;
+  font-weight: normal;
+  color: $color-origin-font;
+}
+a{
+  color: $color-origin-font;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+.container{
+  width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  @extend %user-select;
+}
+.btn-default{
+  @include button-color(#fff, #ccc, #333);
+  &:hover{
+    @include button-color(#e6e6e6, #adadad, #333);
+  }
+}
+.btn-primary{
+  @include button-color(#337ab7, #2e6da4, #fff);
+  &:hover{
+    @include button-color(#286090, #204d74, #fff);
+  }
+  &:active:hover{
+    @include button-color(#204d74, #122b40, #fff);
+  }
+}
+.btn-danger{
+  @include button-color(#d9534f, #d43f3a, #fff);
+  &:hover{
+    @include button-color(#c9302c, #ac2925, #fff);
+  }
+  &:active:hover{
+    @include button-color(#ac2925, #761c19, #fff);
+  }
+}
+.alert{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success{
+    @include alert-color(#dff0d8, #d6e9c6, #3c763d)
+}
+.alert-danger{
+    @include alert-color(#f2dede, #ebccd1, #a94442)
+}
