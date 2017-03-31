@@ -6,10 +6,10 @@ html[xmlns] .clearfix {
    height: 1%;
 }
 body{
-	font-family: quote($font-family);
-	font-size: 14px;
-	font-weight: normal;
-	color: $color-origin-font;
+  font-family: quote($font-family);
+  font-size: 14px;
+  font-weight: normal;
+  color: $color-origin-font;
 }
 a{
   color: $color-origin-font;
@@ -26,9 +26,9 @@ a{
   display: inline-block;
 }
 .container{
-	width: 1240px;
-	padding: 0 20px;
-	margin: 0 auto;
+  width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .btn{
   display: inline-block;

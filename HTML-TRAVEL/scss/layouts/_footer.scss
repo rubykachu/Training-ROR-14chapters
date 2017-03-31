@@ -1,75 +1,75 @@
 .footer{
-	margin-top: 32px;
-	.container{
-		border-top: 1px solid $color-border;
-		padding-top: 34px;
-		box-sizing: border-box;
-	}
-	.item{
-		display: inline-block;
-		vertical-align: top;
-		width: 20.0548%;
-		margin-right: 3.2258%;
-		ul li{
-			list-style: none;
-		}
-		img{
-			width: 175px;
-		}
-		.title{
-			span{
-				font-size: 16px;
-				font-weight: bold;
-				text-transform: uppercase;
-			}
-			ul{
-				padding-top: 20px;
-				li{
-					padding-bottom: 10px;
-				}
-			}
-		}
-		&.subcribe{
-			text-align: right;
-			width: 29.0645%;
-			margin-right: 0;
-			p{
-				padding: 30px 0;
-			}
-			input{
-				width: 68.421%;
-				padding: 15px;
-				outline: none;
-				border: 1px solid $color-border;
-				font-style: italic;
-			}
-			button{
-				margin-left: -4px;
-				background: $color-blue;
-				text-align: center;
-				padding: 13px 25px 16px;
-				font-size: 16px;
-				outline: none;
-				border: none;
-				color: #fff;
-				cursor: pointer;
-			}
-		}
-		.social{
-			@include social
-		}
-	}
-	.copyright{
-		overflow: hidden;
-		p{
-			padding: 15px 0 20px;
-		}
-		.text{
-			float: left;
-		}
-		.designer{
-			float: right;
-			a{color: $color-green;}
-		}
-	}
+  margin-top: 32px;
+  .container{
+    border-top: 1px solid $color-border;
+    padding-top: 34px;
+    box-sizing: border-box;
+  }
+  .item{
+    display: inline-block;
+    vertical-align: top;
+    width: 20.0548%;
+    margin-right: 3.2258%;
+    ul li{
+      list-style: none;
+    }
+    img{
+      width: 175px;
+    }
+    .title{
+      span{
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      ul{
+        padding-top: 20px;
+        li{
+          padding-bottom: 10px;
+        }
+      }
+    }
+    &.subcribe{
+      text-align: right;
+      width: 29.0645%;
+      margin-right: 0;
+      p{
+        padding: 30px 0;
+      }
+      input{
+        width: 68.421%;
+        padding: 15px;
+        outline: none;
+        border: 1px solid $color-border;
+        font-style: italic;
+      }
+      button{
+        margin-left: -4px;
+        background: $color-blue;
+        text-align: center;
+        padding: 13px 25px 16px;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .social{
+      @include social
+    }
+  }
+  .copyright{
+    overflow: hidden;
+    p{
+      padding: 15px 0 20px;
+    }
+    .text{
+      float: left;
+    }
+    .designer{
+      float: right;
+      a{color: $color-green;}
+    }
+  }
 }
