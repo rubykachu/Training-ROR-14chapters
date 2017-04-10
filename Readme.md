@@ -56,8 +56,8 @@ Write a query to print the pattern P(20).
 ```SELECT REPEAT('* ', @number := @number + 1) FROM information_schema.tables LIMIT 20;```
 ### IV.ADVANCED SELECT
 #### 1.The PADS
-```SELECT CONCAT(name, '(', LEFT(occupation, 1), ')') FROM occupations ORDER BY name;
-SELECT CONCAT('There are total ',COUNT(occupation),' ', LOWER(occupation),'s.') FROM occupations GROUP BY occupation ORDER BY COUNT(occupation), occupation;```
+```SELECT CONCAT(name, '(', LEFT(occupation, 1), ')') FROM occupations ORDER BY name;```
+```SELECT CONCAT('There are total ',COUNT(occupation),' ', LOWER(occupation),'s.') FROM occupations GROUP BY occupation ORDER BY COUNT(occupation), occupation;```
 
 
 
