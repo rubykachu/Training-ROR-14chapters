@@ -43,15 +43,15 @@ Hermione decides the best way to choose is by determining the minimum number of 
 ### III.DRAW THE TRIANGLE 
 #### 1. Draw The Triangle 1
 >P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
-\* * * * * 
-\* * * * 
-\* * * 
-\* * 
-\*
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
 Write a query to print the pattern P(20).
 
-```set @NUMBER:= 21; 
-SELECT REPEAT('* ', @NUMBER := @NUMBER - 1) FROM information_schema.tables;```
+```set @NUMBER:= 21;```
+```SELECT REPEAT('* ', @NUMBER := @NUMBER - 1) FROM information_schema.tables;```
 
 #### 2. Draw The Triangle 2
 >P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
@@ -62,8 +62,8 @@ SELECT REPEAT('* ', @NUMBER := @NUMBER - 1) FROM information_schema.tables;```
 * * * * *
 Write a query to print the pattern P(20).
 
-```SET @number = 0;
-SELECT REPEAT('* ', @number := @number + 1) FROM information_schema.tables LIMIT 20;```
+```SET @number = 0;```
+```SELECT REPEAT('* ', @number := @number + 1) FROM information_schema.tables LIMIT 20;```
 ### IV.ADVANCED SELECT
 #### 1.The PADS
 ```SELECT CONCAT(name, '(', LEFT(occupation, 1), ')') FROM occupations ORDER BY name;
