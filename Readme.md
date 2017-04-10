@@ -54,10 +54,33 @@ Write a query to print the pattern P(20).
 
 ```SET @number = 0;```
 ```SELECT REPEAT('* ', @number := @number + 1) FROM information_schema.tables LIMIT 20;```
-### IV.ADVANCED SELECT
+### IV.AGGREGATION
+#### 1.Revising Aggregations - The Count Function
+>Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+```SELECT count(ID) FROM CITY WHERE POPULATION>100000;```
+#### 2.Revising Aggregations - The Sum Function
+>Query the total population of all cities in CITY where District is California.
+
+```SELECT SUM(population) FROM city WHERE district = 'California';```
+#### 3.Revising Aggregations - Averages
+>Query the average population of all cities in CITY where District is California.
+
+```SELECT AVG(population) FROM city WHERE district = 'California';```
+
+#### 4.Average Population 
+>Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+```SELECT ROUND(AVG(POPULATION)) FROM CITY;```
+#### 5.Population Density Difference 
+>Query the difference between the maximum and minimum populations in CITY.
+
+```SELECT MAX(population) - MIN(population) FROM city```
+### V.ADVANCED SELECT
 #### 1.The PADS
 ```SELECT CONCAT(name, '(', LEFT(occupation, 1), ')') FROM occupations ORDER BY name;```
 ```SELECT CONCAT('There are total ',COUNT(occupation),' ', LOWER(occupation),'s.') FROM occupations GROUP BY occupation ORDER BY COUNT(occupation), occupation;```
+
 
 
 
