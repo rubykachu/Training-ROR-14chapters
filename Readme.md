@@ -43,11 +43,11 @@ Hermione decides the best way to choose is by determining the minimum number of 
 ### III.DRAW THE TRIANGLE 
 #### 1. Draw The Triangle 1
 >P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
-* * * * * 
-* * * * 
-* * * 
-* * 
-*
+\* * * * * 
+\* * * * 
+\* * * 
+\* * 
+\*
 Write a query to print the pattern P(20).
 
 ```set @NUMBER:= 21; 
